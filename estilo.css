@@ -54,6 +54,15 @@ h1 {
 	font-family: 'Cherry Swash', cursive;
 }
 
+h2{
+	text-align: center;
+	margin: 40px 0 40px;
+	font-size: 24px;
+	color: #38ffee;
+	text-shadow: 2px 2px 4px #000000;
+	font-family: 'Cherry Swash', cursive;
+}
+
 p {
 	text-align: center;
 	margin: 40px 0 40px;
