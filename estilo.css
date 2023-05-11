@@ -4,9 +4,15 @@ body {
 
 header {
 	background: rgb(255, 255, 255);
-	width: 100%;
+	width: 98.75%;
 	position: fixed;
-	z-index: 100;
+	box-shadow: 1px 1px 5px #000000;
+	margin-top: 0px;
+}
+
+#menu {
+	width: 1000px;
+	margin: auto;
 }
 
 #logo {
@@ -14,8 +20,10 @@ header {
 	width: auto;
 }
 
-#container{
-	margin-top: 15%;
+#principal{
+	margin-left: 50px;
+	margin-top: 50px;
+	width: 50%;
 }
 
 nav {
