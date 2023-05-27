@@ -12,7 +12,7 @@ header {
 
 #menu {
 	width: 1000px;
-	margin: auto;
+	margin: 0px;
 }
 
 #logo {
@@ -20,11 +20,31 @@ header {
 	width: auto;
 }
 
-#principal{
+#principal {
+	width: 100%;
+	display: grid;
+	float: left;
+}
+
+#cuadro {
+	display: flex;
 	margin-left: 50px;
 	margin-top: 50px;
-	width: 50%;
+	width: 95%;
+	margin: auto;
+	text-align: center;
 }
+
+.column {
+	flex: 1;
+	padding: 20px;
+}
+
+.column img {
+	max-width: 100%;
+	height: auto;
+}
+
 
 nav {
 	float: left;
@@ -38,7 +58,7 @@ nav ul {
 nav ul li {
 	float: left;
 	font-family: 'Cherry Swash', cursive;
-	font-size: 20px;
+	font-size: 25px;
 	border: 15px;
 }
 
@@ -55,14 +75,14 @@ nav ul li:hover {
 
 h1 {
 	text-align: center;
-	margin: 40px 0 40px;
+	margin: 0px 0 40px;
 	font-size: 50px;
 	color: #ecf0f1;
 	text-shadow: 2px 2px 4px #000000;
 	font-family: 'Cherry Swash', cursive;
 }
 
-h2{
+h2 {
 	text-align: center;
 	margin: 40px 0 40px;
 	font-size: 24px;
@@ -80,60 +100,3 @@ p {
 	text-shadow: 1px 1px 2px #000000;
 	font-family: 'Cherry Swash', cursive;
 }
-
-form{	
-	width: 800px;
-	margin: 10%;
-}
-
-.form-group {
-	text-align: justify;
-	margin-bottom: 10px;
-	margin-top: auto;
-  }
-  
-  label {
-	float: left;
-	font-weight: bold;
-	font-family: 'Cherry Swash', cursive;
-	color: #ecf0f1;
-	text-shadow: 1px 1px 2px #000000;
-  }
-
-  .center-button {
-	text-align: center;
-  }
-  
-  input[type="text"],
-  textarea {
-	float: none;
-	width: 400px;
-	padding: 5px;
-	font-size: 20px;
-	margin-left: auto;
-	border: 2px solid #ccc;
-	border-radius: 2px;
-	position: initial;
-  }
-
-  textarea {
-	width: 750px;
-	height: 120px;
-  }
-  
-  button[type="submit"] {
-	background-color: #dddfd3;
-	color: rgb(110, 19, 137);
-	padding: 10px 20px;
-	font-size: 25px;
-	font-family: 'Cherry Swash', cursive;
-	border: #000000;
-	border-radius: 8px;
-	cursor: pointer;
-  }
-  
-  button[type="submit"]:hover {
-	background-color: #108b16;
-	color: rgb(255, 255, 255);
-  }
-  

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estiloform.css">
 
 </head>
 
@@ -26,48 +26,50 @@
                 </ul>
             </nav>
     </header>
-    <div id="container">
-        <h1><br><br>Contacto</h1>
-    </div>
+
+    <h1><br><br>Contacto</h1>
+
     <h2>
         Ingrese sus datos:
     </h2>
 
-    <form id="myForm">
-        <div class="form-group">
-            <label for="name">NOMBRE:</label>
-            <input type="text" id="name" name="name"><br>
-        </div>
-       
-        <div class="form-group">
-            <label for="lastName">APELLIDO:</label>
-            <input type="text" id="lastName" name="lastName"><br>
-        </div>
-       
-        <div class="form-group">
-            <label for="dni">DNI:</label>
-            <input type="text" id="dni" name="dni"><br>
-        </div>
-        
-        <div class="form-group">
-            <label for="phone">TELÉFONO:</label>
-            <input type="text" id="phone" name="phone"><br>
-        </div>
-       
-        <div class="form-group">
-            <label for="email">CORREO ELECTRÓNICO:</label>
-            <input type="text" id="email" name="email"><br>
-        </div>
-      
-        <div class="form-group">
-            <label for="comment">CONSULTA:</label>
-            <textarea id="comment" name="comment"></textarea><br>
-        </div>
-       
-        <div class="center-button">
-            <button type="submit">Enviar</button>
-        </div>
-    </form>
+    <div class="formulario">
+        <form id="myForm">
+            <div class="form-group">
+                <label for="name">NOMBRE: </label>
+                <input type="text" id="name" name="name">
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">APELLIDO: </label>
+                <input type="text" id="lastName" name="lastName">
+            </div>
+
+            <div class="form-group">
+                <label for="dni">DNI: </label>
+                <input type="text" id="dni" name="dni">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">TELÉFONO: </label>
+                <input type="text" id="phone" name="phone">
+            </div>
+
+            <div class="form-group">
+                <label for="email">CORREO ELECTRÓNICO: </label>
+                <input type="text" id="email" name="email">
+            </div>
+
+            <div class="form-group">
+                <label for="comment">CONSULTA: </label>
+                <textarea id="comment" name="comment"></textarea><BR></BR>
+            </div>
+
+            <div class="center-button">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
     <script src="formulario.js"></script>
 </body>
 

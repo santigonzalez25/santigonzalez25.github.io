@@ -6,7 +6,7 @@ const phoneInput = document.getElementById("phone");
 const emailInput = document.getElementById("email");
 
 form.addEventListener("submit", (event) => {
-  event.preventDefault(); // Prevenir el envío del formulario para validar primero
+  event.preventDefault(); // Antes de enviar, valido
   if (!validateName(nameInput.value)) {
     alert("Por favor, introduzca un nombre válido");
     nameInput.focus();
@@ -14,22 +14,22 @@ form.addEventListener("submit", (event) => {
     alert("Por favor, introduzca un apellido válido");
     lastNameInput.focus();
   } else if (!validateDni(dniInput.value)) {
-    alert("Por favor, introduzca un DNI válido");
+    alert("Por favor, introduzca un documento válido");
     dniInput.focus();
   } else if (!validatePhone(phoneInput.value)) {
-    alert("Por favor, introduzca un teléfono válido");
+    alert("Por favor, introduzca un teléfono válido (10 números)");
     phoneInput.focus();
   } else if (!validateEmail(emailInput.value)) {
     alert("Por favor, introduzca un correo electrónico válido");
     emailInput.focus();
   } else {
-    form.submit(); // Enviar el formulario si todo está bien
-    alert("Formulario enviado con exito");
+    form.submit(); // Envio el formulario si todo está OK
+    alert("¡Gracias por contactarte con nosotros! Recibirás nuestra respuesta pronto");
   }
 });
 
 function validateName(name) {
-  const regex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/; // Solo permite letras, espacios y acentos
+  const regex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/; // Solo letras, espacios y acentos
   return regex.test(name);
 }
 
@@ -44,6 +44,6 @@ function validatePhone(phone) {
 }
 
 function validateEmail(email) {
-  const regex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,})+$/; // Verifica un formato de correo electrónico válido
+  const regex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,})+$/; // Verifica un formato de correo electrónico
   return regex.test(email);
 }
