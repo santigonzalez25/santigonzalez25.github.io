@@ -132,13 +132,6 @@ header {
   margin: 0px;
 }
 
-#iconos img {
-  margin: 10px;
-  border: 2px #000000;
-  border-radius: 20px;
-  box-shadow: 1px 1px 5px #000000;
-}
-
 nav {
   float: left;
 }
@@ -182,6 +175,13 @@ nav ul li:hover {
   padding: auto;
   align-items: center;
   max-width: min-content;
+}
+
+#iconos img {
+  margin: 10px;
+  border: 2px #000000;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px #000000;
 }
 
 /*------------------------------------------------------FOOTER------------------------------------------------*/
@@ -294,7 +294,6 @@ button {
   box-sizing: border-box
 }
 
-
 .mySlides {
   display: none
 }
@@ -364,7 +363,7 @@ img {
   top: 0;
 }
 
-/*dots/bullets/indicadores */
+/*dots/indicadores */
 .dot {
   cursor: pointer;
   height: 15px;
