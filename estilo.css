@@ -85,12 +85,36 @@ p {
   box-shadow: 2px 2px 2px 2px #000000;
 }
 
+#bloqueNoticia {
+  width: 600px;
+  margin: auto;
+  padding: 30px;
+  max-width: 80%;
+  border: 5px solid rgb(0, 0, 0);
+}
+
+#bloqueNoticia a {
+  text-decoration: none;
+}
+
+#bloqueNoticia img {
+  max-width: 100%;
+  box-shadow: 2px 2px 2px 2px #000000;
+}
+
 #flecha {
-  
-  max-height: 50px;
+  max-height: 80px;
   display: flex;
   align-items: center;
   padding: 20px;
+}
+
+#imgIcono {
+  position: fixed;
+  margin: auto;
+  margin-top: 130px;
+  margin-left: 30px;
+  padding: 0px;
 }
 
 /*------------------------------------------------------MENU------------------------------------------------*/
@@ -194,14 +218,6 @@ footer p {
 }
 
 /*-----------------------------------------------------FORMULARIO-----------------------------------------------*/
-
-#imgMensaje {
-  position: fixed;
-  margin: auto;
-  margin-top: 130px;
-  margin-left: 30px;
-  padding: 0px;
-}
 
 #imgEnd {
   margin: auto;
