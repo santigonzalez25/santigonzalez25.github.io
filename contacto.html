@@ -25,63 +25,45 @@
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
+            <div id="iconos">
+                <a href="https://www.facebook.com/pages/San-Luis-Centro-Oncol%C3%B3gico/105495364299957"><img
+                        src="img/main/facebook.ico" alt="facebook"></a>
+                <a href="mailto:concologico.sl@gmail.com.ar"><img src="img/main/gmail1.ico" alt="gmail"></a>
+                <a href="https://wa.me/+5492665114517"><img src="img/main/whatsapp.ico" alt="whatsapp"></a>
+            </div>
     </header>
 
+    <img id=imgMensaje src="img/main/Mensaje.ico" alt="Mensaje">
     <div id="principal">
-        <h2>
-            Ingrese sus datos:
-        </h2>
-        <div class="formulario">
-            <form id="myForm">
-                <div class="form-group">
-                    <label for="name">NOMBRE: </label>
-                    <input type="text" id="name" name="name">
-                </div>
+        <h2 id="tope">Ingrese sus datos:</h2>
 
-                <hr width="100%" size="4">
+        <form onsubmit="return validar()" id="f_contacto">
 
-                <div class="form-group">
-                    <label for="lastName">APELLIDO: </label>
-                    <input type="text" id="lastName" name="lastName">
-                </div>
+            <label for="f_nombre">Nombre</label>
+            <input id="f_nombre" autofocus />
+            <label for="f_apellido">Apellido</label>
+            <input id="f_apellido" />
+            <label for="f_telefono">Teléfono</label>
+            <input id="f_telefono" />
+            <label for="f_email">Email</label>
+            <input id="f_email" />
 
-                <hr width="100%" size="4">
+            <label for="f_mensaje">Mensaje</label>
+            <textarea id="f_mensaje" rows="3"></textarea>
+            <label for="f_humano"><input id="f_humano" type="checkbox" value="1" /> No soy un Robot</label>
+            <button type="submit">Enviar</button>
+            <div id="errores">
+            </div>
+        </form>
 
-                <div class="form-group">
-                    <label for="dni">DNI: </label>
-                    <input type="text" id="dni" name="dni">
-                </div>
-
-                <hr width="100%" size="4">
-
-                <div class="form-group">
-                    <label for="phone">TELÉFONO: </label>
-                    <input type="text" id="phone" name="phone">
-                </div>
-
-                <hr width="100%" size="4">
-
-                <div class="form-group">
-                    <label for="email">CORREO ELECTRÓNICO: </label>
-                    <input type="text" id="email" name="email">
-                </div>
-
-                <hr width="100%" size="4">
-
-                <div class="form-group">
-                    <label for="comment">CONSULTA: </label>
-                    <textarea id="comment" name="comment"></textarea><BR></BR>
-                </div>
-
-                <div class="center-button">
-                    <button type="submit">Enviar</button>
-                </div>
-            </form>
-        </div>
+        <img id="imgEnd" src="img/main/gracias.jpg" alt="Gracias">
     </div>
 
-    <img id="imgEnd" src="img/main/gracias.jpg" alt="Gracias">
+    <div id="mensajes"></div>
 
+    <div id="flecha">
+        <a href="#tope"><img src="img/main/up.png" alt="UP"></a>
+    </div>
     <footer>
         <div class="footer-left">
             <p>Centro Oncológico Integral San Luis Copyright 2023©</p>
